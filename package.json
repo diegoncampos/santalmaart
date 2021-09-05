@@ -1,10 +1,10 @@
 {
-  "name": "vaxim-ng",
+  "name": "SantalmaArt - PrototypeAr",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --baseHref='https://prototypear.github.io/santalmaart/'",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
