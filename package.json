@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --baseHref='https://prototypear.github.io/santalmaart/'",
+    "build": "ng build --prod --baseHref='/santalmaart/'",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
