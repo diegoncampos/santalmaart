@@ -57,6 +57,10 @@
     .image {
         text-align: center;
 
+        max-height: 85vh !important;
+        width: 100% !important;
+        display: flex !important;
+
         img {
             width: auto !important;
             display: inline-block !important;

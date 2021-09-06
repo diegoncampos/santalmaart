@@ -21,18 +21,15 @@ export class HomethreeBannerComponent implements OnInit {
 
     homeSlides: OwlOptions = {
 		items: 1,
-		nav: true,
+		nav: false,
 		margin: 25,
 		loop: true,
 		dots: true,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
-		autoplay: true,
+		autoplay: true, //change after test
 		autoplayHoverPause: true,
-		navText: [
-			"<i class='fas fa-long-arrow-alt-left'></i>",
-			"<i class='fas fa-long-arrow-alt-right'></i>",
-		]
+		autoHeight: false
     }
 
 }
