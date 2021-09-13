@@ -9,6 +9,7 @@ import { CartService } from '../../../cart.service';
 import { ModalService } from '../../../modal.service';
 import { HttpClient } from "@angular/common/http";
 import { Product } from 'src/app/product';
+import { WishListService } from 'src/app/wishlist.service';
 
 @Component({
     selector: 'app-shop-fullwidth-page-one',
@@ -26,6 +27,7 @@ export class ShopFullwidthPageOneComponent implements OnInit {
         private httpClient: HttpClient,
         private modalService: NgbModal,
         private cartService: CartService,
+        private wishListService: WishListService,
         private modalViewService: ModalService,
         notifierService: NotifierService
     ) {
@@ -43,6 +45,11 @@ export class ShopFullwidthPageOneComponent implements OnInit {
     addToCart(product: Product) {
         this.cartService.addToCart(product);
         this.notifier.notify('success', 'Your product added to the cart!');
+    }
+
+    addToWishList(product: Product) {
+        this.wishListService.addToWishList(product);
+        this.notifier.notify('success', 'Your product added to the wish list!');
     }
 
     addToModal(product: Product) {

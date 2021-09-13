@@ -20,7 +20,7 @@
     <div class="container">
         <div class="empty-cart" *ngIf="(products.length == 0); else cartForm">
             <p>Your cart is currently empty.</p>
-            <a routerLink="/shop-full-width-1" class="default-btn">Return to Shop</a>
+            <a routerLink="/products" class="default-btn">Return to Shop</a>
         </div>
         <ng-template #cartForm>
             <form>
@@ -113,4 +113,4 @@
     </div>
 </div>
 
-<app-subscribe></app-subscribe>
+<!-- <app-subscribe></app-subscribe> -->

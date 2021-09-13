@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Pullover ecosmart hooded",
+        "title": "Pullover ecosmart hooded...",
         "currencyType": "$",
         "oldPrice": 21.99,
         "currentPrice": 399.99,
@@ -19,7 +19,7 @@
         "category": { "id": 2, "name": "Jacket", "published_at": "2021-06-23T06:14:11.322Z", "created_at": "2021-06-23T06:14:08.076Z", "updated_at": "2021-06-23T06:14:11.341Z", "locale": "en" },
         "bestSelling": true,
         "outOfStock": false,
-        "hot": false,
+        "hot": true,
         "onSell": false,
         "bestSellingProducts": true,
         "newArrivalProducts": false,

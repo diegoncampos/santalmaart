@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { WishListService } from 'src/app/wishlist.service';
 import { CartService } from '../../../cart.service';
 
 @Component({
@@ -10,10 +11,12 @@ import { CartService } from '../../../cart.service';
 export class NavbarComponent implements OnInit {
 
     cartProducts = this.cartService.getItems();
+    wishList = this.wishListService.getItems();
 
     constructor(
         public router: Router,
-        private cartService: CartService
+        private cartService: CartService,
+        private wishListService: WishListService
     ) { }
 
     ngOnInit(): void {
