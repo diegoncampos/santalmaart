@@ -759,6 +759,9 @@
                 }
                 &.for-responsive {
                     display: block !important;
+                    overflow: hidden !important;
+                    opacity: 0.95;
+                    margin-top: -12px;
                 }
             }
             .others-option {
@@ -1067,6 +1070,9 @@
                 }
                 &.for-responsive {
                     display: block !important;
+                    overflow: hidden !important;
+                    opacity: 0.95;
+                    margin-top: -15px;
                 }
             }
             .others-option {
