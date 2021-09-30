@@ -82,6 +82,8 @@ import { ShopRightSidebarPageTwoComponent } from './components/pages/shop-right-
 import { ShopRightSidebarPageOneComponent } from './components/pages/shop-right-sidebar-page-one/shop-right-sidebar-page-one.component';
 import { ComparePageComponent } from './components/pages/compare-page/compare-page.component';
 import { DynamicProductsDetailsPageComponent } from './components/pages/dynamic-products-details-page/dynamic-products-details-page.component';
+import { UploadProductComponent } from './components/pages/upload-product/upload-product.component';
+import { ImageCropperModule } from 'ngx-image-cropper';
 
 @NgModule({
   declarations: [
@@ -151,6 +153,7 @@ import { DynamicProductsDetailsPageComponent } from './components/pages/dynamic-
     ShopRightSidebarPageOneComponent,
     ComparePageComponent,
     DynamicProductsDetailsPageComponent,
+    UploadProductComponent,
   ],
   imports: [
     BrowserModule,
@@ -169,7 +172,8 @@ import { DynamicProductsDetailsPageComponent } from './components/pages/dynamic-
     HttpClientModule,
     MarkdownModule.forRoot(),
     NotifierModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    ImageCropperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

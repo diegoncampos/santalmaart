@@ -34,6 +34,7 @@ import { ShopLeftSidebarPageTwoComponent } from './components/pages/shop-left-si
 import { ShopRightSidebarPageOneComponent } from './components/pages/shop-right-sidebar-page-one/shop-right-sidebar-page-one.component';
 import { ShopRightSidebarPageTwoComponent } from './components/pages/shop-right-sidebar-page-two/shop-right-sidebar-page-two.component';
 import { TermsConditionsPageComponent } from './components/pages/terms-conditions-page/terms-conditions-page.component';
+import { UploadProductComponent } from './components/pages/upload-product/upload-product.component';
 import { WishlistPageComponent } from './components/pages/wishlist-page/wishlist-page.component';
 
 const routes: Routes = [
@@ -44,6 +45,7 @@ const routes: Routes = [
     {path: 'about', component: AboutPageComponent},
     {path: 'feedback', component: FeedbackPageComponent},
     {path: 'products', component: ShopFullwidthPageOneComponent},
+    {path: 'product-abm', component: UploadProductComponent},
     // {path: 'shop-full-width-2', component: ShopFullwidthPageTwoComponent},
     // {path: 'shop-left-sidebar-1', component: ShopLeftSidebarPageOneComponent},
     // {path: 'shop-left-sidebar-2', component: ShopLeftSidebarPageTwoComponent},
