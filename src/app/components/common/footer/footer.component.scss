@@ -1,17 +1,9 @@
 .footer-area {
     background-color: #f9f9f9;
-    padding-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .single-footer-widget {
-    margin-bottom: 30px;
-
-    .logo {
-        display: inline-block;
-        margin-bottom: 25px;
-    }
-    &.pr-5 {
-        padding-right: 5rem;
-    }
     .social-links {
         padding-left: 0;
         margin-bottom: 0;
@@ -20,7 +12,6 @@
         li {
             display: inline-block;
             margin-right: 13px;
-            
             a {
                 display: block;
                 color: var(--optionalColor);
@@ -28,30 +19,6 @@
                 &:hover {
                     color: var(--mainColor);
                 }
-            }
-        }
-    }
-    .location {
-        color: var(--optionalColor);
-        display: inline-block;
-        position: relative;
-        margin-top: 20px;
-
-        &::before {
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            content: '';
-            height: 1px;
-            position: absolute;
-            transition: var(--transition);
-            background-color: var(--blackColor);
-        }
-        &:hover {
-            color: var(--mainColor);
-
-            &::before {
-                width: 0;
             }
         }
     }
@@ -109,13 +76,8 @@
     }
 }
 .copyright-area {
-    border-top: 1px solid #e8e8e8;
-    margin-top: 70px;
-    padding: {
-        top: 30px;
-        bottom: 30px;
-    };
     p {
+        font-size: small;
         a {
             font-weight: 600;
         }
@@ -128,9 +90,6 @@
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
 
-    .footer-area {
-        padding-top: 60px;
-    }
     .single-footer-widget {
         &.pr-5 {
             padding-right: 0;
@@ -147,14 +106,8 @@
         }
     }
     .copyright-area {
-        margin-top: 30px;
-        padding: {
-            top: 25px;
-            bottom: 25px;
-        };
         .payment-type {
-            text-align: start;
-            margin-top: 15px;
+            display: none;
         }
     }
 
@@ -165,8 +118,7 @@
 
     .copyright-area {
         .payment-type {
-            text-align: end;
-            margin-top: 0;
+            display: none;
         }
     }
 
@@ -175,9 +127,6 @@
 /* Min width 768px to Max width 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-    .footer-area {
-        padding-top: 80px;
-    }
     .single-footer-widget {
         &.pr-5 {
             padding-right: 0;
@@ -191,11 +140,9 @@
         }
     }
     .copyright-area {
-        margin-top: 50px;
-        padding: {
-            top: 25px;
-            bottom: 25px;
-        };
+        .payment-type {
+            display: none;
+        }
     }
 
 }

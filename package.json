@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --baseHref=/santalmaart/",
+    "build": "ng build --prod",
+    "deploy": "firebase deploy",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
