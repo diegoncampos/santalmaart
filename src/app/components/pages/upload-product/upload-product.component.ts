@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { base64ToFile, Dimensions, ImageCroppedEvent, ImageTransform, LoadedImage } from 'ngx-image-cropper';
+import { Dimensions, ImageCroppedEvent, ImageTransform, LoadedImage } from 'ngx-image-cropper';
+import { Product } from 'src/app/components/models/product';
+import { Image } from 'src/app/components/models/image';
+import { Category } from 'src/app/components/models/category';
 
 @Component({
     selector: 'app-upload-product',
@@ -15,6 +18,33 @@ export class UploadProductComponent implements OnInit {
     showCropper = false;
     containWithinAspectRatio = false;
     transform: ImageTransform = {};
+    public categories: Category[] = [{id: 1, name: "Category 1"}, {id: 2, name: "Category 2"}, {id: 3, name: "Category 3"}]
+    public images: Image = {
+        id: 0,
+        name: "",
+        url: "",
+        alternativeText: "",
+        width: 0,
+        height: 0,
+        thumbnailUrl: ""
+    }
+    public product: Product = {
+        id: 0,
+        title: "",
+        oldPrice: 0,
+        currentPrice: 0,
+        shortDesc: "",
+        LongDesc: "",
+        sku: "",
+        inStock: true,
+        addInfo: "",  //aditional info
+        published_at: "",
+        slug: "",  //short name to redirect
+        categoryId: 0,
+        outOfStock: false,
+        onSell: false,
+        images: [this.images]
+    };
 
     constructor() { }
 
@@ -116,6 +146,14 @@ export class UploadProductComponent implements OnInit {
             ...this.transform,
             rotate: this.rotation
         };
+    }
+
+    save() {
+        console.log("Save");
+    }
+
+    remove() {
+        console.log("Remove");
     }
 
 }
