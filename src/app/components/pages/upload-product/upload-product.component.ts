@@ -3,6 +3,7 @@ import { Dimensions, ImageCroppedEvent, ImageTransform, LoadedImage } from 'ngx-
 import { Product } from 'src/app/components/models/product';
 import { Image } from 'src/app/components/models/image';
 import { Category } from 'src/app/components/models/category';
+import { Editor } from 'ngx-editor';
 
 @Component({
     selector: 'app-upload-product',
@@ -34,7 +35,7 @@ export class UploadProductComponent implements OnInit {
         oldPrice: 0,
         currentPrice: 0,
         shortDesc: "",
-        LongDesc: "",
+        longDesc: "",
         sku: "",
         inStock: true,
         addInfo: "",  //aditional info
@@ -46,9 +47,18 @@ export class UploadProductComponent implements OnInit {
         images: [this.images]
     };
 
+    longDesc_editor: Editor = new Editor();
+    addInfo_editor: Editor = new Editor();
+
+
     constructor() { }
 
     ngOnInit(): void {
+    }
+
+    ngOnDestroy(): void {
+        this.longDesc_editor.destroy();
+        this.addInfo_editor.destroy();
     }
 
     fileChangeEvent(event: any): void {
@@ -149,7 +159,7 @@ export class UploadProductComponent implements OnInit {
     }
 
     save() {
-        console.log("Save");
+        console.log("Save", this.product);
     }
 
     remove() {

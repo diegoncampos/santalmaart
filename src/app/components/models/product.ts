@@ -6,7 +6,7 @@ export interface Product {
     oldPrice: number,
     currentPrice: number,
     shortDesc: string,
-    LongDesc: string,
+    longDesc: string,
     sku: string,
     inStock: boolean,
     addInfo: string,  //aditional info

@@ -39,13 +39,30 @@
                     <label for="exampleFormControlInput1">Short Description</label>
                     <input type="text" class="form-control">
                 </div>
-                <div class="col-sm-12">
+                <!-- <div class="col-sm-12">
                     <label for="exampleFormControlInput1">Long Description</label>
                     <textarea type="text" class="form-control"></textarea>
+                </div> -->
+                <div class="text-editor">
+                    <ngx-editor-menu [editor]="longDesc_editor"> </ngx-editor-menu>
+                    <ngx-editor
+                        name="longDesc"
+                        [editor]="longDesc_editor"
+                        [(ngModel)]="product.longDesc"
+                        [disabled]="false"
+                        [placeholder]="'Type here...'"
+                    ></ngx-editor>
                 </div>
-                <div class="col-sm-12">
-                    <label for="exampleFormControlInput1">Aditional Info</label>
-                    <textarea type="text" class="form-control"></textarea>
+                <br/>
+                <div class="text-editor">
+                    <ngx-editor-menu [editor]="addInfo_editor"> </ngx-editor-menu>
+                    <ngx-editor
+                        name="addInfo"
+                        [editor]="addInfo_editor"
+                        [(ngModel)]="product.addInfo"
+                        [disabled]="false"
+                        [placeholder]="'Type here...'"
+                    ></ngx-editor>
                 </div>
                 <div class="col-sm-12">
                     <div class="col-auto my-1">

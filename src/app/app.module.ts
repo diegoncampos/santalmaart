@@ -84,6 +84,7 @@ import { ComparePageComponent } from './components/pages/compare-page/compare-pa
 import { DynamicProductsDetailsPageComponent } from './components/pages/dynamic-products-details-page/dynamic-products-details-page.component';
 import { UploadProductComponent } from './components/pages/upload-product/upload-product.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
+import { NgxEditorModule } from 'ngx-editor';
 
 @NgModule({
   declarations: [
@@ -173,7 +174,8 @@ import { ImageCropperModule } from 'ngx-image-cropper';
     MarkdownModule.forRoot(),
     NotifierModule,
     NgxPaginationModule,
-    ImageCropperModule
+    ImageCropperModule,
+    NgxEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
