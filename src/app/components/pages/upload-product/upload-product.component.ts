@@ -44,6 +44,7 @@ export class UploadProductComponent implements OnInit {
         categoryId: 0,
         outOfStock: false,
         onSell: false,
+        featured: false,
         images: [this.images]
     };
 

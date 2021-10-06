@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-sm-12">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"
-                        [checked]="product.inStock">
+                        [checked]="product.inStock" [disabled]="true">
                     <label class="form-check-label" for="defaultCheck1">In Stock</label>
                 </div>
                 <div class="col-sm-12">
@@ -88,11 +88,16 @@
                         [checked]="product.onSell">
                     <label class="form-check-label" for="defaultCheck1">On Sell</label>
                 </div>
+                <div class="col-sm-12">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"
+                        [checked]="product.featured">
+                    <label class="form-check-label" for="defaultCheck1">Featured</label>
+                </div>
             </div>
 
 
             <!-- Image uploader -->
-            <div class="col-md-6 dragNdrop" *ngIf="!imageChangedEvent">
+            <div class="col-md-12 dragNdrop" *ngIf="!imageChangedEvent">
                 <div class="form-group files color">
                     <h5>Upload Your Image </h5>
                     <input type="file" class="form-control" (change)="fileChangeEvent($event)">

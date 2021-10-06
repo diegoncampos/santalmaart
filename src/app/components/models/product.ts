@@ -15,5 +15,6 @@ export interface Product {
     categoryId: number,
     outOfStock: boolean,
     onSell: boolean,
-    images: Image[]
+    images: Image[],
+    featured?: boolean
 }

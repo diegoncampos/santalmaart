@@ -1,1 +1,9 @@
-@import "../../../common/feedback/feedback.component.scss";
+// @import "../../../common/feedback/feedback.component.scss";
+
+.feedback-area {
+    padding: 20px 35px 10px 35px;
+    background-color: rgb(233, 229, 229);
+    .rating {
+        color: rgb(243, 201, 17);
+    }
+}
