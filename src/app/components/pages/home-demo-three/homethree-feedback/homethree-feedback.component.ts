@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { Feedback } from 'src/app/components/models/feedback'
+import { Feedback } from 'src/app/models/feedback'
 
 @Component({
 	selector: 'app-homethree-feedback',

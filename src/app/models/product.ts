@@ -1,4 +1,4 @@
-import { Image } from 'src/app/components/models/image';
+import { Image } from 'src/app/models/image';
 
 export interface Product {
     id: number,

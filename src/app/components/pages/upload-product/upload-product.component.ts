@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Dimensions, ImageCroppedEvent, ImageTransform, LoadedImage } from 'ngx-image-cropper';
-import { Product } from 'src/app/components/models/product';
-import { Image } from 'src/app/components/models/image';
-import { Category } from 'src/app/components/models/category';
+import { Product } from 'src/app/models/product';
+import { Image } from 'src/app/models/image';
+import { Category } from 'src/app/models/category';
 import { Editor } from 'ngx-editor';
 
 @Component({
